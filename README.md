@@ -20,7 +20,8 @@
 
 ### FECHA DE ENTREGA: 03-04-2024
 
-Descripción del proyecto:
+#### Descripción del proyecto:
+
 El proyecto consiste en el desarrollo de un modelo que sirva para la predicción de si la probabilidad de un paciente de tener una ataque cerebral es alta o baja. Para esto se ha recibido una base de datos de un hospital público con información anónima. En la base de datos se encuentran 12 variables predictivas que describen el estado socio-demográfico y médico del paciente. Además, presenta una variable de respuesta que indica si el paciente ha sufrido o no un ataque cerebral.
 A través de el código presentado a continuación se ha seguido una proceso para crear y encontrar este modelo. En primer lugar, se ha analizado la base de datos obtenida para asegurar su integridad. Se encontraron valores nulos en algunas variables predictivas y los registros con esta información faltante se han eliminado. También, se encontraron registros con valores inconsistentes con la información, estos registros fueron evaluados y la información fue corregida dentro de las posibilidades o se eliminaron los registros si no se podía corregir.
 El siguiente paso fue analizar la distribución de las variables predictivas, su correlación y la distribución de la variable de respuesta. Aquí se encontró que la distribución de la variable de respuesta estaba muy desbalanceada. Esto podía ser un problema en cuanto al desarrollo del modelo de predicción. Por esto, se realizó un análisis de la mejor estrategia para sortear este problema entre el oversampling y el undersampling. Se dividieron los datos en particiones de entrenamiento, validación y prueba con una distribución de 70/15/15. No se encontraron diferencias estadísticamente significativas entre estas herramientas, por lo que basado en otras métricas como la precisión o la sensibilidad se eligió utilizar el método de undersampling para el desarrollo del modelo. 
